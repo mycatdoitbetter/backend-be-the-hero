@@ -1,5 +1,6 @@
-const connection = require("../database/connection");
-module.exports = {
+import connection from "../database/connection";
+
+export default {
   async create(request, response) {
     const { id } = request.body;
 

@@ -1,5 +1,6 @@
-const connection = require("../database/connection");
-module.exports = {
+import connection from "../database/connection";
+
+export default {
   async list(request, response) {
     const ong_id = request.headers.authorization;
 

@@ -1,6 +1,10 @@
-const express = require("express");
-const routes = require("./routes");
-const cors = require("cors");
+// NODE NÃO PERMITE ESSA SYNTAXE DE "IMPORT", UTILIZEI O SUCRASE PARA
+// UTILIZA-LA.
+
+import express from "express";
+import cors from "cors";
+import routes from "./routes";
+
 const app = express();
 
 app.use(cors());
