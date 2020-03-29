@@ -7,8 +7,6 @@ export default {
 
     const id = crypto.randomBytes(4).toString("HEX");
 
-    console.log(name, email, whatsapp, city, uf, id);
-
     await connection("ongs").insert({ id, name, email, whatsapp, city, uf });
 
     return response.json({ id });
